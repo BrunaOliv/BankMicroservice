@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.api\\controllers\\customerregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|solutionrelative:customerregistration.api\\controllers\\customerregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|solutionrelative:customerregistration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C60D2613-E903-443B-B69E-38C25B5B4223}|CustomerRegistration.Infra.Data\\CustomerRegistration.Infra.Data.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.infra.data\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C60D2613-E903-443B-B69E-38C25B5B4223}|CustomerRegistration.Infra.Data\\CustomerRegistration.Infra.Data.csproj|solutionrelative:customerregistration.infra.data\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9214FFA8-EBF9-41AE-BAD6-CB1D1A8CAF26}|CustomerRegistration.Domain\\CustomerRegistration.Domain.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.domain\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9214FFA8-EBF9-41AE-BAD6-CB1D1A8CAF26}|CustomerRegistration.Domain\\CustomerRegistration.Domain.csproj|solutionrelative:customerregistration.domain\\interfaces\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040E24C6-F615-4D44-BB03-55D16396C624}|CustomerRegistration.Application\\CustomerRegistration.Application.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.application\\commands\\createcustomer\\createcustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{040E24C6-F615-4D44-BB03-55D16396C624}|CustomerRegistration.Application\\CustomerRegistration.Application.csproj|solutionrelative:customerregistration.application\\commands\\createcustomer\\createcustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9214FFA8-EBF9-41AE-BAD6-CB1D1A8CAF26}|CustomerRegistration.Domain\\CustomerRegistration.Domain.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9214FFA8-EBF9-41AE-BAD6-CB1D1A8CAF26}|CustomerRegistration.Domain\\CustomerRegistration.Domain.csproj|solutionrelative:customerregistration.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{040E24C6-F615-4D44-BB03-55D16396C624}|CustomerRegistration.Application\\CustomerRegistration.Application.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.application\\commands\\createcustomer\\createcustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{040E24C6-F615-4D44-BB03-55D16396C624}|CustomerRegistration.Application\\CustomerRegistration.Application.csproj|solutionrelative:customerregistration.application\\commands\\createcustomer\\createcustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|solutionrelative:customerregistration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{040E24C6-F615-4D44-BB03-55D16396C624}|CustomerRegistration.Application\\CustomerRegistration.Application.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.application\\commands\\createcustomer\\createcustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{040E24C6-F615-4D44-BB03-55D16396C624}|CustomerRegistration.Application\\CustomerRegistration.Application.csproj|solutionrelative:customerregistration.application\\commands\\createcustomer\\createcustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.api\\controllers\\customerregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|solutionrelative:customerregistration.api\\controllers\\customerregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,12 +71,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Domain\\Interfaces\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "CustomerRegistration.Domain\\Interfaces\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Domain\\Interfaces\\ICustomerRepository.cs",
+              "RelativeToolTip": "CustomerRegistration.Domain\\Interfaces\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T14:50:50.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Domain\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "CustomerRegistration.Domain\\Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Domain\\Entities\\Customer.cs",
+              "RelativeToolTip": "CustomerRegistration.Domain\\Entities\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T14:31:52.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Infra.Data\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "CustomerRegistration.Infra.Data\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Infra.Data\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "CustomerRegistration.Infra.Data\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T14:20:57.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Api\\Program.cs",
               "RelativeDocumentMoniker": "CustomerRegistration.Api\\Program.cs",
               "ToolTip": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Api\\Program.cs",
               "RelativeToolTip": "CustomerRegistration.Api\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T13:48:19.568Z",
               "EditorCaption": ""
@@ -77,33 +128,33 @@
               "RelativeDocumentMoniker": "CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommand.cs",
               "ToolTip": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommand.cs",
               "RelativeToolTip": "CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T13:46:53.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "CreateCustomerCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
               "RelativeDocumentMoniker": "CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
               "ToolTip": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
               "RelativeToolTip": "CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T13:45:45.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "CustomerRegistrationController.cs",
               "DocumentMoniker": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Api\\Controllers\\CustomerRegistrationController.cs",
               "RelativeDocumentMoniker": "CustomerRegistration.Api\\Controllers\\CustomerRegistrationController.cs",
               "ToolTip": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Api\\Controllers\\CustomerRegistrationController.cs",
               "RelativeToolTip": "CustomerRegistration.Api\\Controllers\\CustomerRegistrationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T13:36:42.009Z",
               "EditorCaption": ""

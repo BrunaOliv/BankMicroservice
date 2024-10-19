@@ -8,6 +8,7 @@ C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\Custom
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Application\obj\Debug\net8.0\CustomerRegistration.Application.AssemblyInfoInputs.cache
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Application\obj\Debug\net8.0\CustomerRegistration.Application.AssemblyInfo.cs
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Application\obj\Debug\net8.0\CustomerRegistration.Application.csproj.CoreCompileInputs.cache
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Application\obj\Debug\net8.0\CustomerRegistration.Application.sourcelink.json
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Application\obj\Debug\net8.0\Customer.586B55F5.Up2Date
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Application\obj\Debug\net8.0\CustomerRegistration.Application.dll
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Application\obj\Debug\net8.0\refint\CustomerRegistration.Application.dll

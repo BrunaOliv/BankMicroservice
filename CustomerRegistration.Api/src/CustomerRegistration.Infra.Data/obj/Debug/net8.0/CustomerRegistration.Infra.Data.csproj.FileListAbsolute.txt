@@ -1,10 +1,15 @@
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\bin\Debug\net8.0\CustomerRegistration.Infra.Data.deps.json
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\bin\Debug\net8.0\CustomerRegistration.Infra.Data.dll
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\bin\Debug\net8.0\CustomerRegistration.Infra.Data.pdb
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\bin\Debug\net8.0\CustomerRegistration.Domain.dll
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\bin\Debug\net8.0\CustomerRegistration.Domain.pdb
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\obj\Debug\net8.0\CustomerRegistration.Infra.Data.csproj.AssemblyReference.cache
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\obj\Debug\net8.0\CustomerRegistration.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\obj\Debug\net8.0\CustomerRegistration.Infra.Data.AssemblyInfoInputs.cache
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\obj\Debug\net8.0\CustomerRegistration.Infra.Data.AssemblyInfo.cs
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\obj\Debug\net8.0\CustomerRegistration.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\obj\Debug\net8.0\CustomerRegistration.Infra.Data.sourcelink.json
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\obj\Debug\net8.0\Customer.D37AA0FE.Up2Date
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\obj\Debug\net8.0\CustomerRegistration.Infra.Data.dll
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\obj\Debug\net8.0\refint\CustomerRegistration.Infra.Data.dll
 C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Infra.Data\obj\Debug\net8.0\CustomerRegistration.Infra.Data.pdb

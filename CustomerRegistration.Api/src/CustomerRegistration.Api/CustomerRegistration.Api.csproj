@@ -14,6 +14,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CustomerRegistration.Application\CustomerRegistration.Application.csproj" />
+    <ProjectReference Include="..\CustomerRegistration.Domain\CustomerRegistration.Domain.csproj" />
+    <ProjectReference Include="..\CustomerRegistration.Infra.Data\CustomerRegistration.Infra.Data.csproj" />
   </ItemGroup>
 
 </Project>
