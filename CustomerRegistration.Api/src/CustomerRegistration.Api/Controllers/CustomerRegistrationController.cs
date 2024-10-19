@@ -20,7 +20,6 @@ namespace CustomerRegistration.Api.Controllers
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<IActionResult> CreateCustomer([FromBody] CreateCustomerCommand command)
         {
-            //testeeeee
             await _mediator.Send(command);
             return Ok("Cliente criado com sucesso.");
         }

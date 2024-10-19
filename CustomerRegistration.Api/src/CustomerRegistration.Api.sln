@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerRegistration.Api", "CustomerRegistration.Api\CustomerRegistration.Api.csproj", "{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerRegistration.Api", "CustomerRegistration.Api\CustomerRegistration.Api.csproj", "{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerRegistration.Domain", "CustomerRegistration.Domain\CustomerRegistration.Domain.csproj", "{9214FFA8-EBF9-41AE-BAD6-CB1D1A8CAF26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerRegistration.Domain", "CustomerRegistration.Domain\CustomerRegistration.Domain.csproj", "{9214FFA8-EBF9-41AE-BAD6-CB1D1A8CAF26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerRegistration.Infra.Data", "CustomerRegistration.Infra.Data\CustomerRegistration.Infra.Data.csproj", "{C60D2613-E903-443B-B69E-38C25B5B4223}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerRegistration.Infra.Data", "CustomerRegistration.Infra.Data\CustomerRegistration.Infra.Data.csproj", "{C60D2613-E903-443B-B69E-38C25B5B4223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerRegistration.Application", "CustomerRegistration.Application\CustomerRegistration.Application.csproj", "{040E24C6-F615-4D44-BB03-55D16396C624}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerRegistration.Application", "CustomerRegistration.Application\CustomerRegistration.Application.csproj", "{040E24C6-F615-4D44-BB03-55D16396C624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerRegistration.Infra.Publisher", "CustomerRegistration.Infra.Publisher\CustomerRegistration.Infra.Publisher.csproj", "{0DC52D1B-E3C7-4980-AB61-95C1BC1DE24A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerRegistration.Infra.Consumer", "CustomerRegistration.Infra.Consumer\CustomerRegistration.Infra.Consumer.csproj", "{38B4BA9C-E9FF-4139-AF1D-26F2EE029D09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{040E24C6-F615-4D44-BB03-55D16396C624}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{040E24C6-F615-4D44-BB03-55D16396C624}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{040E24C6-F615-4D44-BB03-55D16396C624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC52D1B-E3C7-4980-AB61-95C1BC1DE24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC52D1B-E3C7-4980-AB61-95C1BC1DE24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC52D1B-E3C7-4980-AB61-95C1BC1DE24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC52D1B-E3C7-4980-AB61-95C1BC1DE24A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38B4BA9C-E9FF-4139-AF1D-26F2EE029D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38B4BA9C-E9FF-4139-AF1D-26F2EE029D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38B4BA9C-E9FF-4139-AF1D-26F2EE029D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38B4BA9C-E9FF-4139-AF1D-26F2EE029D09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

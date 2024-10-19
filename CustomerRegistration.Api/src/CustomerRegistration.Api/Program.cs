@@ -2,6 +2,7 @@ using CustomerRegistration.Application.Commands.CreateCustomer;
 using CustomerRegistration.Application.Mappings;
 using CustomerRegistration.Domain.Interfaces;
 using CustomerRegistration.Infra.Data.Repositories;
+using CustomerRegistration.Infra.Publisher.Publishers;
 using MediatR;
 using System.Reflection;
 
@@ -19,6 +20,7 @@ builder.Services.AddMediatR(typeof(CreateCustomerCommand).Assembly);
 builder.Services.AddAutoMapper(typeof(CustomerProfile).Assembly);
 
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IMessagePublisher, MessagePublisher>();
 
 var app = builder.Build();
 
