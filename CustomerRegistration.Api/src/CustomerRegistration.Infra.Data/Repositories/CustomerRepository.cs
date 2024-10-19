@@ -49,8 +49,6 @@ namespace CustomerRegistration.Infra.Data.Repositories
                         transaction.Commit();
 
                         return customerId;
-
-
                     }
                     catch (Exception ex)
                     {

@@ -1,7 +1,9 @@
 using CustomerRegistration.Application.Commands.CreateCustomer;
+using CustomerRegistration.Application.Mappings;
 using CustomerRegistration.Domain.Interfaces;
 using CustomerRegistration.Infra.Data.Repositories;
 using MediatR;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +15,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddMediatR(typeof(CreateCustomerCommand).Assembly);
+
+builder.Services.AddAutoMapper(typeof(CustomerProfile).Assembly);
+
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
 var app = builder.Build();

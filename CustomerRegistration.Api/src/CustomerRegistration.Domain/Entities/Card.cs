@@ -4,15 +4,15 @@ namespace CustomerRegistration.Domain.Entities
 {
     public class Card
     {
-        public int CardId { get; set; }  // card_id (chave primária)
-        public int CustomerId { get; set; }  // customer_id (chave estrangeira)
-        public string? CardType { get; set; }  // card_type (opcional)
-        public decimal? RequestedLimit { get; set; }  // requested_limit (opcional)
-        public decimal? RequestedCreditAmount { get; set; }  // requested_credit_amount (opcional)
-        public int? PaymentTerm { get; set; }  // payment_term (opcional)
-        public float? InterestRate { get; set; }  // interest_rate (opcional)
-        public int? BranchNumber { get; set; }  // branch_number (opcional)
-        public string? AccountNumber { get; set; }  // account_number (opcional)
+        public int CardId { get; set; }
+        public int CustomerId { get; set; }
+        public string? CardType { get; set; }
+        public decimal? RequestedLimit { get; set; }
+        public decimal? RequestedCreditAmount { get; set; }
+        public int? PaymentTerm { get; set; }
+        public float? InterestRate { get; set; }
+        public int? BranchNumber { get; set; }
+        public string? AccountNumber { get; set; } 
         public StatusCard StatusCard { get; set; }
     }
 }
