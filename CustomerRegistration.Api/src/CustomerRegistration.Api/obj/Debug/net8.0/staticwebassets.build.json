@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "hjRE2ZWGaj4vBdWkJUP7wL50N3qZxS9BVpx+6IdCJ6g=",
+  "Source": "CustomerRegistration.Api",
+  "BasePath": "_content/CustomerRegistration.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

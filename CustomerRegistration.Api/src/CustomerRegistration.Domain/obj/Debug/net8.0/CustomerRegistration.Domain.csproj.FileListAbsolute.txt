@@ -1,0 +1,11 @@
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Domain\bin\Debug\net8.0\CustomerRegistration.Domain.deps.json
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Domain\bin\Debug\net8.0\CustomerRegistration.Domain.dll
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Domain\bin\Debug\net8.0\CustomerRegistration.Domain.pdb
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Domain\obj\Debug\net8.0\CustomerRegistration.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Domain\obj\Debug\net8.0\CustomerRegistration.Domain.AssemblyInfoInputs.cache
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Domain\obj\Debug\net8.0\CustomerRegistration.Domain.AssemblyInfo.cs
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Domain\obj\Debug\net8.0\CustomerRegistration.Domain.csproj.CoreCompileInputs.cache
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Domain\obj\Debug\net8.0\CustomerRegistration.Domain.dll
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Domain\obj\Debug\net8.0\refint\CustomerRegistration.Domain.dll
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Domain\obj\Debug\net8.0\CustomerRegistration.Domain.pdb
+C:\Users\BrunaOliv\Projetos\bankMicroservice\CustomerRegistration.Api\src\CustomerRegistration.Domain\obj\Debug\net8.0\ref\CustomerRegistration.Domain.dll

@@ -1,0 +1,73 @@
+# Compiled binary and object files
+bin/
+obj/
+out/
+
+# .NET dependencies
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.log
+*.vsix
+*.nupkg
+*.snupkg
+*.vscode
+
+# User-specific files and folders
+.vs/
+.idea/
+*.user
+*.rsuser
+*.suo
+
+# Package directories
+**/packages/
+!**/packages/build/
+!**/packages/repositories.config
+
+# NuGet
+.nuget/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.csproj.user
+
+# Resharper and Rider
+_ReSharper*/
+*.DotSettings.user
+
+# Azure Functions
+local.settings.json
+
+# Logs, database, and generated files
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Visual Studio Code settings
+.vscode/
+*.code-workspace
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Configuration Transformations
+*.transform.*
+
+# ASP.NET core environment files
+appsettings*.json
+
+# Secrets and credentials
+secrets.json
+
+# Backup & temporary files
+*~
+*.bak
+*.swp
+*.tmp

@@ -1,0 +1,116 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.api\\controllers\\customerregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|solutionrelative:customerregistration.api\\controllers\\customerregistrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040E24C6-F615-4D44-BB03-55D16396C624}|CustomerRegistration.Application\\CustomerRegistration.Application.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.application\\commands\\createcustomer\\createcustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{040E24C6-F615-4D44-BB03-55D16396C624}|CustomerRegistration.Application\\CustomerRegistration.Application.csproj|solutionrelative:customerregistration.application\\commands\\createcustomer\\createcustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BABF27D8-DFB0-4AE0-A960-4ABADD8541E7}|CustomerRegistration.Api\\CustomerRegistration.Api.csproj|solutionrelative:customerregistration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{040E24C6-F615-4D44-BB03-55D16396C624}|CustomerRegistration.Application\\CustomerRegistration.Application.csproj|c:\\users\\brunaoliv\\projetos\\bankmicroservice\\customerregistration.api\\src\\customerregistration.application\\commands\\createcustomer\\createcustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{040E24C6-F615-4D44-BB03-55D16396C624}|CustomerRegistration.Application\\CustomerRegistration.Application.csproj|solutionrelative:customerregistration.application\\commands\\createcustomer\\createcustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Api\\Program.cs",
+              "RelativeDocumentMoniker": "CustomerRegistration.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Api\\Program.cs",
+              "RelativeToolTip": "CustomerRegistration.Api\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:48:19.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateCustomerCommand.cs",
+              "DocumentMoniker": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommand.cs",
+              "RelativeDocumentMoniker": "CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommand.cs",
+              "ToolTip": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommand.cs",
+              "RelativeToolTip": "CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:46:53.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateCustomerCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
+              "RelativeDocumentMoniker": "CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
+              "ToolTip": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
+              "RelativeToolTip": "CustomerRegistration.Application\\Commands\\CreateCustomer\\CreateCustomerCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:45:45.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerRegistrationController.cs",
+              "DocumentMoniker": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Api\\Controllers\\CustomerRegistrationController.cs",
+              "RelativeDocumentMoniker": "CustomerRegistration.Api\\Controllers\\CustomerRegistrationController.cs",
+              "ToolTip": "C:\\Users\\BrunaOliv\\Projetos\\bankMicroservice\\CustomerRegistration.Api\\src\\CustomerRegistration.Api\\Controllers\\CustomerRegistrationController.cs",
+              "RelativeToolTip": "CustomerRegistration.Api\\Controllers\\CustomerRegistrationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T13:36:42.009Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
