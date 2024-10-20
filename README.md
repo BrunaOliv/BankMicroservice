@@ -7,12 +7,11 @@ Os três serviços são independentes e cada um deles possui seu próprio escopo
 - Autonomia: Cada serviço é independente, com seu próprio ciclo de vida.
 - Resiliência: A falha em um serviço não afeta os demais diretamente.
 - Escalabilidade: Serviços podem ser escalados individualmente.
+  
 Exemplo:
 
 Serviço CustomerRegistration.Api: Registro de novos Clientes.
-
 Serviço CreditCard.Consumer: Processamento de Cartões.
-
 Serviço CreditProposal.Consumer: Propostas de Crédito.
 
 ## Comunicação entre os Microsserviços via Azure Service Bus
