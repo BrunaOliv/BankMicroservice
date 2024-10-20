@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CustomerRegistration.Application\CustomerRegistration.Application.csproj" />
     <ProjectReference Include="..\CustomerRegistration.Domain\CustomerRegistration.Domain.csproj" />
+    <ProjectReference Include="..\CustomerRegistration.Infra.Consumer\CustomerRegistration.Infra.Consumer.csproj" />
     <ProjectReference Include="..\CustomerRegistration.Infra.Data\CustomerRegistration.Infra.Data.csproj" />
     <ProjectReference Include="..\CustomerRegistration.Infra.Publisher\CustomerRegistration.Infra.Publisher.csproj" />
   </ItemGroup>
