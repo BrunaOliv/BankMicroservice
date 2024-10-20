@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using CustomerRegistration.Application.DTOs;
+using CustomerRegistration.Application.Interfaces;
 using CustomerRegistration.Domain.Entities;
 using CustomerRegistration.Domain.Interfaces;
 using MediatR;
@@ -21,9 +23,17 @@ namespace CustomerRegistration.Application.Commands.CreateCustomer
         {
             var customerEntity = _mapper.Map<Customer>(request);
 
-            await _customerRepository.CreateCustomer(customerEntity);
+            var customerId = await _customerRepository.CreateCustomer(customerEntity);
 
-            await _messagePublisher.SendMessageQueue();
+            var messageRequest = new CustomerMessage
+            {
+                CustomerId = customerId,
+                MonthlyIncome = customerEntity.FinancialInformation.MonthlyIncome,
+                EmploymentDuration = customerEntity.FinancialInformation.EmploymentDuration
+            };
+
+            await _messagePublisher.SendMessageQueue(messageRequest);
+
             return Unit.Value;
         }
     }
