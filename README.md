@@ -10,9 +10,9 @@ Os três serviços são independentes e cada um deles possui seu próprio escopo
   
 Exemplo:
 
-Serviço CustomerRegistration.Api: Registro de novos Clientes.
-Serviço CreditCard.Consumer: Processamento de Cartões.
-Serviço CreditProposal.Consumer: Propostas de Crédito.
+Serviço CustomerRegistration.Api: Registro de novos Clientes. 
+Serviço CreditCard.Consumer: Processamento de Cartões. 
+Serviço CreditProposal.Consumer: Propostas de Crédito. 
 
 ## Comunicação entre os Microsserviços via Azure Service Bus
 ### 2. Motivação para Comunicação Assíncrona
