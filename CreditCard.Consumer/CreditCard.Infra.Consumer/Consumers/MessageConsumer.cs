@@ -16,7 +16,7 @@ namespace CreditCard.Infra.Consumer.Consumers
 
         public MessageConsumer(IConfiguration configuration, IMediator mediator, AppSettings appSettings)
         {
-            _queueName = "customer";
+            _queueName = "creditproposal";
             _mediator = mediator;
             _appSettings = appSettings;
         }

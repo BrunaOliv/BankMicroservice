@@ -14,7 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CreditCard.Application\CreditCard.Application.csproj" />
     <ProjectReference Include="..\CreditCard.Configuration\CreditCard.Configuration.csproj" />
+    <ProjectReference Include="..\CreditCard.Infra.Consumer\CreditCard.Infra.Consumer.csproj" />
   </ItemGroup>
 
   <ItemGroup>

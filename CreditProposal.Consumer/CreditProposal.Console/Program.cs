@@ -1,6 +1,8 @@
 ﻿using CreditProposal.Application.Commands.CreateCreditProposal;
+using CreditProposal.Application.Interfaces;
 using CreditProposal.Configuration.Configurations;
 using CreditProposal.Infra.Consumer.Consumers;
+using CreditProposal.Infra.Publisher.Publishers;
 using MediatR;
 using Microsoft.Azure.Amqp;
 using Microsoft.Extensions.Configuration;
@@ -24,6 +26,7 @@ class Program
                 // Registro de interfaces e implementações
                 services.AddMediatR(typeof(CreateCreditProposalCommand).Assembly);
                 services.AddHostedService<MessageConsumer>();
+                services.AddScoped<IMessagePublisher, MessagePublisher>();
 
                 // Registra as configurações
                 var appSettings = context.Configuration.Get<AppSettings>();

@@ -6,13 +6,13 @@ namespace CreditProposal.Domain.Entities
     {
         public List<CreditCard> Cards  { get; set; }
 
-        public CreditProposalEntity(int score, decimal monthlyIncome, int employmentDuration, CardType cardType)
+        public CreditProposalEntity(int score, decimal monthlyIncome, int employmentDuration)
         {
-            var creditProposal = GenerateCreditProposal(score,monthlyIncome, employmentDuration, cardType);
+            var creditProposal = GenerateCreditProposal(score,monthlyIncome, employmentDuration);
             Cards = creditProposal;
         }
 
-        private List<CreditCard> GenerateCreditProposal(int score, decimal monthlyIncome, int employmentDuration, CardType cardType)
+        private List<CreditCard> GenerateCreditProposal(int score, decimal monthlyIncome, int employmentDuration)
         {
             var availableCards = new List<CreditCard>();
 

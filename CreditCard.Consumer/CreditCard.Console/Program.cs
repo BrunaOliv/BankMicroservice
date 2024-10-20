@@ -1,4 +1,6 @@
-﻿using CreditCard.Configuration.Configurations;
+﻿using CreditCard.Application.Commands;
+using CreditCard.Configuration.Configurations;
+using CreditCard.Infra.Consumer.Consumers;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -13,16 +15,13 @@ class Program
         using var host = Host.CreateDefaultBuilder(args)
             .ConfigureAppConfiguration((context, config) =>
             {
-                // Adiciona o appsettings.json ao IConfiguration
                 config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
             })
             .ConfigureServices((context, services) =>
             {
-                // Registro de interfaces e implementações
-                //services.AddMediatR(typeof(CreateCreditProposalCommand).Assembly);
-                //services.AddHostedService<MessageConsumer>();
+                services.AddMediatR(typeof(CreateCreditCardCommand).Assembly);
+                services.AddHostedService<MessageConsumer>();
 
-                // Registra as configurações
                 var appSettings = context.Configuration.Get<AppSettings>();
                 services.AddSingleton(appSettings);
             })

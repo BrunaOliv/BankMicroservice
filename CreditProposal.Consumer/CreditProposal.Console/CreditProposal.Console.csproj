@@ -17,6 +17,7 @@
     <ProjectReference Include="..\CreditProposal.Application\CreditProposal.Application.csproj" />
     <ProjectReference Include="..\CreditProposal.Configuration\CreditProposal.Configuration.csproj" />
     <ProjectReference Include="..\CreditProposal.Consumer\CreditProposal.Infra.Consumer.csproj" />
+    <ProjectReference Include="..\CreditProposal.Publisher\CreditProposal.Infra.Publisher.csproj" />
   </ItemGroup>
 
   <ItemGroup>

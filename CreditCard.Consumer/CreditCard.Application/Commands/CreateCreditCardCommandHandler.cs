@@ -7,7 +7,14 @@ namespace CreditCard.Application.Commands
     {
         public async Task<Unit> Handle(CreateCreditCardCommand request, CancellationToken cancellationToken)
         {
-            var customerCreditCard = new CreditCardEntity(request.CustomerId, request.RequestedCardType, request.CardRequestStatus, request.LimitApprovad);
+            var creditCards = new List<CreditCardEntity>();
+
+            foreach (var creditCard in request.CreditCards)
+            {
+                var newCreditCard = new CreditCardEntity(request.CustomerId, creditCard.RequestedCardType, creditCard.Status, creditCard.LimitApprovad);
+                creditCards.Add(newCreditCard);
+            }
+            
 
             return Unit.Value;
         }
