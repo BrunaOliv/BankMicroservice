@@ -12,9 +12,9 @@ Os três serviços são independentes e cada um deles possui seu próprio escopo
 ### 2. Motivação para Comunicação Assíncrona
 A comunicação assíncrona permite que os serviços se comuniquem sem depender da disponibilidade instantânea dos outros. Isso melhora a resiliência e desacopla as operações.
 
-Desacoplamento: Um serviço pode enviar uma mensagem e continuar sua execução, sem precisar esperar pela resposta.
-Escalabilidade: Como não há bloqueio entre os serviços, cada um pode escalar conforme a necessidade.
-Tolerância a falhas: Se um serviço estiver temporariamente indisponível, as mensagens ficam armazenadas na fila até serem processadas.
+- Desacoplamento: Um serviço pode enviar uma mensagem e continuar sua execução, sem precisar esperar pela resposta.
+- Escalabilidade: Como não há bloqueio entre os serviços, cada um pode escalar conforme a necessidade.
+- Tolerância a falhas: Se um serviço estiver temporariamente indisponível, as mensagens ficam armazenadas na fila até serem processadas.
 
 ## Modo de Comunicação:
 ### Fila (Queue) – Comunicação 1:1.
