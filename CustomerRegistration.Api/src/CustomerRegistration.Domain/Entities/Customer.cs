@@ -15,7 +15,7 @@
         public Contact? Contact { get; set; }
         public Address? Address { get; set; }
         public FinancialInformation? FinancialInformation { get; set; }
-        public List<Card>? Cards { get; set; }
+        public List<Card> Cards { get; set; }
 
     }
 }

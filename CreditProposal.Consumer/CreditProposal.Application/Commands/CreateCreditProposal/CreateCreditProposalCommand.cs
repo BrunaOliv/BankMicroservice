@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using CreditProposal.Domain.Enuns;
+using MediatR;
 
 namespace CreditProposal.Application.Commands.CreateCreditProposal
 {
@@ -7,5 +8,6 @@ namespace CreditProposal.Application.Commands.CreateCreditProposal
         public int CustomerId { get; set; }
         public decimal MonthlyIncome { get; set; }
         public int EmploymentDuration { get; set; }
+        public CardType RequestedCardType { get; set; }
     }
 }

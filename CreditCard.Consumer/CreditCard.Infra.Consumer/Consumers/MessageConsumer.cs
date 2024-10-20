@@ -1,12 +1,12 @@
 ﻿using Azure.Messaging.ServiceBus;
-using CreditProposal.Application.Commands.CreateCreditProposal;
-using CreditProposal.Configuration.Configurations;
+using CreditCard.Application.Commands;
+using CreditCard.Configuration.Configurations;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using System.Text.Json;
 
-namespace CreditProposal.Infra.Consumer.Consumers
+namespace CreditCard.Infra.Consumer.Consumers
 {
     public class MessageConsumer : BackgroundService
     {
@@ -53,7 +53,7 @@ namespace CreditProposal.Infra.Consumer.Consumers
             }
         }
 
-        public CreateCreditProposalCommand DeserializeMessage(BinaryData message)
+        public CreateCreditCardCommand DeserializeMessage(BinaryData message)
         {
             var options = new JsonSerializerOptions
             {
@@ -62,7 +62,7 @@ namespace CreditProposal.Infra.Consumer.Consumers
 
             try
             {
-                return JsonSerializer.Deserialize<CreateCreditProposalCommand>(message, options);
+                return JsonSerializer.Deserialize<CreateCreditCardCommand>(message, options);
             }
             catch (JsonException ex)
             {
@@ -72,4 +72,3 @@ namespace CreditProposal.Infra.Consumer.Consumers
         }
     }
 }
-

@@ -1,13 +1,13 @@
-﻿namespace CustomerRegistration.Domain.Enums
+﻿namespace CreditCard.Domain.Enuns
 {
-    public enum StatusCard
+    public enum CardStatus
     {
         PendingApproval,
         Approved,
         Issued,
         Activated,
         Blocked,
-        Expired
-
+        Expired,
+        Denied
     }
 }

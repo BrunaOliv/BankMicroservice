@@ -5,7 +5,6 @@ namespace CustomerRegistration.Application.Commands.CreateCustomer
 {
     public class CreateCustomerCommand : IRequest
     {
-        public int CustomerId { get; set; }
         public string? FullName { get; set; }
         public DateTime BirthDate { get; set; }
         public string? Cpf { get; set; }
@@ -18,20 +17,16 @@ namespace CustomerRegistration.Application.Commands.CreateCustomer
         public ContactCommand? Contact { get; set; }
         public AddressCommand? Address { get; set; }
         public FinancialInformationCommand? FinancialInformation { get; set; }
-        public List<CardCommand>? Cards { get; set; }
+        public List<CardCommand> RequestedCards { get; set; }
 
         public class ContactCommand
         {
-            public int ContactId { get; set; }
-            public int CustomerId { get; set; }
             public string? Phone { get; set; }
             public string? Email { get; set; }
         }
 
         public class AddressCommand
         {
-            public int AddressId { get; set; }
-            public int CustomerId { get; set; }
             public string? Street { get; set; }
             public int? Number { get; set; }
             public string? Neighborhood { get; set; }
@@ -42,8 +37,6 @@ namespace CustomerRegistration.Application.Commands.CreateCustomer
 
         public class FinancialInformationCommand
         {
-            public int FinancialInfoId { get; set; }
-            public int CustomerId { get; set; }
             public decimal? MonthlyIncome { get; set; }
             public string? Occupation { get; set; }
             public string? CompanyName { get; set; }
@@ -53,16 +46,9 @@ namespace CustomerRegistration.Application.Commands.CreateCustomer
 
         public class CardCommand
         {
-            public int CardId { get; set; }
-            public int CustomerId { get; set; }
-            public string? CardType { get; set; }
-            public decimal? RequestedLimit { get; set; }
-            public decimal? RequestedCreditAmount { get; set; }
-            public int? PaymentTerm { get; set; }
-            public float? InterestRate { get; set; }
-            public int? BranchNumber { get; set; }
-            public string? AccountNumber { get; set; }
-            public StatusCard StatusCard { get; set; }
+            public CardType CardType { get; set; }
+            public CardStatus StatusCard { get; set; } = CardStatus.PendingApproval;
+            public int PaymentDate { get; set; }
         }
     }
 }
