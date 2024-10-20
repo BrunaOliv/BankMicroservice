@@ -11,5 +11,16 @@ namespace CustomerRegistration.Domain.Entities
         public int PaymentDate { get; set; }
         public decimal? Limit { get; set; }
         public DateTime? CardExpirationDate { get; set; }
+
+        public Card(int customerId, CardType cardType, CardStatus cardStatus, int paymentDate, decimal? limit, DateTime? cardExpirationDate)
+        {
+            CustomerId = customerId;
+            CardType = cardType;
+            CardStatus = cardStatus;
+            PaymentDate = paymentDate;
+            Limit = limit;
+            CardExpirationDate = cardExpirationDate;
+        }
     }
+
 }

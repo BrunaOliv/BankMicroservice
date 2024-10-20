@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using CustomerRegistration.Application.Commands.CreateCustomer;
+using CustomerRegistration.Application.Commands.UpdateCustomerCreditCard;
 using CustomerRegistration.Domain.Entities;
 using static CustomerRegistration.Application.Commands.CreateCustomer.CreateCustomerCommand;
 

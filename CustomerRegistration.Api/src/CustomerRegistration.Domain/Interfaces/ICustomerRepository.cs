@@ -5,5 +5,6 @@ namespace CustomerRegistration.Domain.Interfaces
     public interface ICustomerRepository
     {
         Task<int> CreateCustomer(Customer customer);
+        Task UpdateCustomerCreditCard(List<Card> cards);
     }
 }

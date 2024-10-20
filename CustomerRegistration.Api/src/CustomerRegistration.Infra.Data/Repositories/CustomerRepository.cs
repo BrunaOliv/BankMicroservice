@@ -3,6 +3,7 @@ using CustomerRegistration.Domain.Interfaces;
 using Dapper;
 using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
+using System.Transactions;
 
 namespace CustomerRegistration.Infra.Data.Repositories
 {
@@ -71,5 +72,33 @@ namespace CustomerRegistration.Infra.Data.Repositories
 
             }
         }
+
+        public async Task UpdateCustomerCreditCard(List<Card> cards)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                var insertCardSql = @"
+                    INSERT INTO CreditCards 
+                        (CustomerId, CardType, CardStatus, PaymentDate, Limit, CardExpirationDate) 
+                    VALUES 
+                        (@CustomerId, @CardType, @CardStatus, @PaymentDate, @Limit, @CardExpirationDate);";
+
+                foreach (var card in cards)
+                {
+                    await connection.ExecuteAsync(insertCardSql, new
+                    {
+                        card.CustomerId,
+                        card.CardType,
+                        card.CardStatus,
+                        card.PaymentDate,
+                        card.Limit,
+                        card.CardExpirationDate
+                    });
+                }
+            }
+        }
+
     }
 }

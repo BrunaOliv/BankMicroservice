@@ -1,4 +1,5 @@
 using CustomerRegistration.Application.Commands.CreateCustomer;
+using CustomerRegistration.Application.Commands.UpdateCustomerCreditCard;
 using CustomerRegistration.Application.Interfaces;
 using CustomerRegistration.Application.Mappings;
 using CustomerRegistration.Domain.Interfaces;
@@ -17,13 +18,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddMediatR(typeof(CreateCustomerCommand).Assembly);
+builder.Services.AddMediatR(typeof(UpdateCustomerCreditCardCommand).Assembly);
 
 builder.Services.AddAutoMapper(typeof(CustomerProfile).Assembly);
 
-builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddSingleton<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IMessagePublisher, MessagePublisher>();
 
-//builder.Services.AddHostedService<MessageConsumer>();
+builder.Services.AddHostedService<MessageConsumer>();
 
 var app = builder.Build();
 

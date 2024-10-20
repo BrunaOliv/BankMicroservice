@@ -1,6 +1,8 @@
 ﻿using CreditCard.Application.Commands;
+using CreditCard.Application.Interfaces;
 using CreditCard.Configuration.Configurations;
 using CreditCard.Infra.Consumer.Consumers;
+using CreditCard.Infra.Publisher.Publishers;
 using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,6 +26,7 @@ class Program
 
                 var appSettings = context.Configuration.Get<AppSettings>();
                 services.AddSingleton(appSettings);
+                services.AddScoped<IMessagePublisher, MessagePublisher>();
             })
             .Build();
 
