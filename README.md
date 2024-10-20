@@ -8,12 +8,6 @@ Os três serviços são independentes e cada um deles possui seu próprio escopo
 - Resiliência: A falha em um serviço não afeta os demais diretamente.
 - Escalabilidade: Serviços podem ser escalados individualmente.
   
-Exemplo:
-
-Serviço CustomerRegistration.Api: Registro de novos Clientes. 
-Serviço CreditCard.Consumer: Processamento de Cartões. 
-Serviço CreditProposal.Consumer: Propostas de Crédito. 
-
 ## Comunicação entre os Microsserviços via Azure Service Bus
 ### 2. Motivação para Comunicação Assíncrona
 A comunicação assíncrona permite que os serviços se comuniquem sem depender da disponibilidade instantânea dos outros. Isso melhora a resiliência e desacopla as operações.
