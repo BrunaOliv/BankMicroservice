@@ -22,15 +22,22 @@ namespace CreditProposal.Application.Commands.CreateCreditProposal
 
             var customerCreditProposal = new CreditProposalEntity(customerScore, request.MonthlyIncome, request.EmploymentDuration);
 
-            var cardTypesInList1 = request.RequestedCards.Select(c => c.CardType).ToHashSet();
 
-            var matchingCards = customerCreditProposal.Cards.Where(c => cardTypesInList1.Contains(c.CardType)).ToList();
+            foreach (var item in customerCreditProposal.Cards)
+            {
+                var matchingItem = request.RequestedCards.FirstOrDefault(l => l.CardType == item.CardType);
+                if (matchingItem != null)
+                {
+                    item.CardId = matchingItem.CardId; 
+                }
+
+            }
 
             var creditsCardsApproval = new List<CreditCardMessage>();
 
-            foreach (var card in matchingCards)
+            foreach (var card in customerCreditProposal.Cards)
             {
-                var creditCardMessage = new CreditCardMessage(card.CardType, CardStatus.Approved, card.MaxLimit);
+                var creditCardMessage = new CreditCardMessage(card.CardId, card.CardType, CardStatus.Approved, card.MaxLimit);
                 creditsCardsApproval.Add(creditCardMessage);
             }
 

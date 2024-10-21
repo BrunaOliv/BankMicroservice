@@ -17,7 +17,7 @@ namespace CustomerRegistration.Application.Commands.UpdateCustomerCreditCard
             var creditCards = new List<Card>();
             foreach (var creditCard in request.CreditCards)
             {
-                var newCreditCard = new Card(request.CustomerId, creditCard.CardType, creditCard.CardStatus, creditCard.PaymentDate, creditCard.Limit,creditCard.CardExpirationDate);
+                var newCreditCard = new Card(creditCard.CardId, creditCard.CardType, creditCard.CardStatus, creditCard.PaymentDate, creditCard.Limit,creditCard.CardExpirationDate);
                 creditCards.Add(newCreditCard);
             }
 

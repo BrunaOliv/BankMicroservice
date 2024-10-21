@@ -10,8 +10,8 @@ namespace CustomerRegistration.Application.Mappings
     {
         public CustomerProfile()
         {
-            CreateMap<CreateCustomerCommand, Customer>()
-                .ForMember(dest => dest.Cards, opt => opt.MapFrom(src => src.RequestedCards));
+            //CreateMap<CreateCustomerCommand, Customer>()
+            //    .ForMember(dest => dest.Cards, opt => opt.MapFrom(src => src.RequestedCards));
             CreateMap<ContactCommand, Contact>();
             CreateMap<AddressCommand, Address>();
             CreateMap<FinancialInformationCommand, FinancialInformation>();
@@ -20,6 +20,10 @@ namespace CustomerRegistration.Application.Mappings
             .ForMember(dest => dest.CardId, opt => opt.Ignore())
             .ForMember(dest => dest.Limit, opt => opt.Ignore())
             .ForMember(dest => dest.CardExpirationDate, opt => opt.Ignore());
+
+            CreateMap<CreateCustomerCommand, Customer>()
+            .ForMember(dest => dest.Cards, opt => opt.MapFrom(src =>
+                src.RequestedCards.Select(c => new Card(c.CardType, c.StatusCard, c.PaymentDate))));
         }
     }
 }

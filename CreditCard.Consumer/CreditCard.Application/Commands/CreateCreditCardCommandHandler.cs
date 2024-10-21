@@ -19,7 +19,7 @@ namespace CreditCard.Application.Commands
 
             foreach (var creditCard in request.CreditCards)
             {
-                var newCreditCard = new CreditCardEntity(request.CustomerId, creditCard.RequestedCardType, creditCard.Status, creditCard.LimitApprovad);
+                var newCreditCard = new CreditCardEntity(request.CustomerId, creditCard.CardId, creditCard.RequestedCardType, creditCard.Status, creditCard.LimitApprovad);
                 creditCards.Add(newCreditCard);
             }
 

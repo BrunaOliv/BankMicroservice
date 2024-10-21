@@ -4,25 +4,27 @@ namespace CreditProposal.Application.DTO_s
 {
     public class CreditProposalMessage
     {
-        public CreditProposalMessage(int customerId, List<CreditCardMessage> creditCards)
+        public CreditProposalMessage(Guid customerId, List<CreditCardMessage> creditCards)
         {
             CustomerId = customerId;
             CreditCards = creditCards;
         }
 
-        public int CustomerId { get; set; }
+        public Guid CustomerId { get; set; }
         public List<CreditCardMessage> CreditCards { get; set; }
         
 
         public class CreditCardMessage
         {
-            public CreditCardMessage(CardType requestedCardType, CardStatus status, decimal limitApprovad)
+            public CreditCardMessage(Guid cardId, CardType requestedCardType, CardStatus status, decimal limitApprovad)
             {
+                CardId = cardId;
                 RequestedCardType = requestedCardType;
                 Status = status;
                 LimitApprovad = limitApprovad;
             }
 
+            public Guid CardId { get; set; }
             public CardType RequestedCardType { get; set; }
             public CardStatus Status { get; set; }
             public decimal LimitApprovad { get; set; }

@@ -2,8 +2,8 @@
 {
     public class FinancialInformation
     {
-        public int FinancialInfoId { get; set; }
-        public int CustomerId { get; set; }
+        public Guid FinancialInfoId { get; set; }
+        public Guid CustomerId { get; set; }
         public decimal? MonthlyIncome { get; set; }
         public string? Occupation { get; set; }
         public string? CompanyName { get; set; }

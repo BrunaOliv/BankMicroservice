@@ -3,7 +3,6 @@ using CustomerRegistration.Domain.Interfaces;
 using Dapper;
 using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
-using System.Transactions;
 
 namespace CustomerRegistration.Infra.Data.Repositories
 {
@@ -13,7 +12,7 @@ namespace CustomerRegistration.Infra.Data.Repositories
 
         public CustomerRepository(IConfiguration configuration) => _connectionString = configuration.GetConnectionString("DefaultConnection");
 
-        public async Task<int> CreateCustomer(Customer customer)
+        public async Task<Guid> CreateCustomer(Customer customer)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
@@ -24,10 +23,10 @@ namespace CustomerRegistration.Infra.Data.Repositories
                     {
                         var insertCustomerSql = @"
                             INSERT INTO Customers (FullName, BirthDate, Cpf, Rg, IssuingAuthority, Gender, Nationality, MaritalStatus) 
-                            VALUES (@FullName, @BirthDate, @Cpf, @Rg, @IssuingAuthority, @Gender, @Nationality, @MaritalStatus);
-                            SELECT CAST(SCOPE_IDENTITY() AS int);";
+                            OUTPUT inserted.CustomerId
+                            VALUES (@FullName, @BirthDate, @Cpf, @Rg, @IssuingAuthority, @Gender, @Nationality, @MaritalStatus);";
 
-                        var customerId = await connection.ExecuteScalarAsync<int>(insertCustomerSql, customer, transaction);
+                        var customerId = await connection.ExecuteScalarAsync<Guid>(insertCustomerSql, customer, transaction);
 
                         customer.Contact.CustomerId = customerId;
                         var insertContactSql = @"
@@ -47,9 +46,9 @@ namespace CustomerRegistration.Infra.Data.Repositories
                             VALUES (@CustomerId, @MonthlyIncome, @Occupation, @CompanyName, @EmploymentDuration, @CreditScore);";
                         await connection.ExecuteAsync(insertFinancialInfoSql, customer.FinancialInformation, transaction);
 
-                        foreach(var card in customer.Cards)
+                        foreach (var card in customer.Cards)
                         {
-                            card.CustomerId = customerId; 
+                            card.CustomerId = customerId;
 
                             var insertCardSql = @"
                                 INSERT INTO CreditCards (CustomerId, CardType, CardStatus, PaymentDate) 
@@ -79,26 +78,61 @@ namespace CustomerRegistration.Infra.Data.Repositories
             {
                 await connection.OpenAsync();
 
-                var insertCardSql = @"
-                    INSERT INTO CreditCards 
-                        (CustomerId, CardType, CardStatus, PaymentDate, Limit, CardExpirationDate) 
-                    VALUES 
-                        (@CustomerId, @CardType, @CardStatus, @PaymentDate, @Limit, @CardExpirationDate);";
+                var updateCardSql = @"
+                    UPDATE CreditCards 
+                    SET 
+                        CardStatus = @CardStatus,
+                        PaymentDate = @PaymentDate,
+                        Limit = @Limit,
+                        CardExpirationDate = @CardExpirationDate
+                    WHERE 
+                        CardId = @CardId;";
 
                 foreach (var card in cards)
                 {
-                    await connection.ExecuteAsync(insertCardSql, new
+                    await connection.ExecuteAsync(updateCardSql, new
                     {
                         card.CustomerId,
                         card.CardType,
                         card.CardStatus,
                         card.PaymentDate,
                         card.Limit,
-                        card.CardExpirationDate
+                        card.CardExpirationDate,
+                        card.CardId
                     });
                 }
             }
         }
 
+        public async Task<List<Card>> GetCustomerCreditCardsAsync(Guid customerId)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                await connection.OpenAsync();
+
+                var sql = @"
+                    SELECT 
+                        cc.CustomerId, 
+                        cc.CardId, 
+                        cc.CardType, 
+                        cc.CardStatus, 
+                        cc.PaymentDate, 
+                        cc.Limit, 
+                        cc.CardExpirationDate
+                    FROM 
+                        CreditCards cc
+                    INNER JOIN 
+                        Customers c ON cc.CustomerId = c.CustomerId
+                    WHERE 
+                        c.CustomerId = @CustomerId";
+
+                var result = await connection.QueryAsync<Card>(
+                    sql,
+                    new { CustomerId = customerId }
+                );
+
+                return result.ToList();
+            }
+        }
     }
 }

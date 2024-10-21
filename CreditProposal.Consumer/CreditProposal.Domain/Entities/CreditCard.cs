@@ -4,6 +4,7 @@ namespace CreditProposal.Domain.Entities
 {
     public class CreditCard
     {
+        public Guid CardId { get; set; }
         public CardType CardType { get; set; }
         public decimal MaxLimit { get; set; }
 

@@ -2,7 +2,6 @@
 using CustomerRegistration.Application.DTOs;
 using CustomerRegistration.Application.Interfaces;
 using CustomerRegistration.Domain.Entities;
-using CustomerRegistration.Domain.Enums;
 using CustomerRegistration.Domain.Interfaces;
 using MediatR;
 using static CustomerRegistration.Application.DTOs.CustomerMessage;
@@ -27,22 +26,22 @@ namespace CustomerRegistration.Application.Commands.CreateCustomer
 
             var customerId = await _customerRepository.CreateCustomer(customerEntity);
 
-            var requestedCards = new List<RequestedCard>();
+            var requestedCardsMessage = new List<RequestedCard>();
 
+            var requestedCards = await _customerRepository.GetCustomerCreditCardsAsync(customerId);
 
-           foreach (var card in request.RequestedCards)
-           {
-                var newCard = new RequestedCard(card.CardType, card.StatusCard, card.PaymentDate);
-                requestedCards.Add(newCard);
-           }
-
+            foreach (var card in requestedCards)
+            {
+                var newCard = new RequestedCard(card.CardId, card.CardType, card.CardStatus, card.PaymentDate);
+                requestedCardsMessage.Add(newCard);
+            }
 
             var messageRequest = new CustomerMessage
             {
                 CustomerId = customerId,
                 MonthlyIncome = customerEntity.FinancialInformation.MonthlyIncome,
                 EmploymentDuration = customerEntity.FinancialInformation.EmploymentDuration,
-                RequestedCards = requestedCards
+                RequestedCards = requestedCardsMessage
             };
 
             await _messagePublisher.SendMessageQueue(messageRequest);
