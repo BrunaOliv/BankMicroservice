@@ -21,3 +21,6 @@ A comunicação assíncrona permite que os serviços se comuniquem sem depender 
 
 Exemplo: Serviço A envia dados de cliente para o Serviço B via uma fila client-processing-queue.
 Se o Serviço B estiver indisponível, a mensagem é mantida na fila até ele processá-la.
+
+
+![Diagrama](assets/Diagrama_projeto.jpg)
