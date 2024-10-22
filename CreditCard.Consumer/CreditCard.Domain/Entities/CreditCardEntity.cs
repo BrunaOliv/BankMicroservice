@@ -8,17 +8,18 @@ namespace CreditCard.Domain.Entities
         public Guid CardId { get; set; }
         public CardType CardType { get; set; }
         public CardStatus CardStatus { get; set; }
-        public decimal Limit { get; set; }
-        public DateTime CardExpirationDate { get; set; }
+        public decimal? Limit { get; set; }
+        public DateTime? CardExpirationDate { get; set; }
         public int PaymentDate { get; set; }
 
-        public CreditCardEntity(Guid customerId, Guid cardId, CardType requestedCardType, CardStatus cardStatus, decimal limitApproved)
+        public CreditCardEntity(Guid customerId, Guid cardId, CardType requestedCardType, CardStatus cardStatus, decimal? limitApproved)
         {
             if (cardStatus == CardStatus.Denied)
             {
                 CustomerId = customerId;
                 CardId = cardId;
                 CardType = requestedCardType;
+                CardExpirationDate = null;
                 CardStatus = CardStatus.Denied;
             }
 

@@ -12,7 +12,7 @@ namespace CreditCard.Application.Commands
             public Guid CardId { get; set; }
             public CardType RequestedCardType { get; set; }
             public CardStatus Status { get; set; }
-            public decimal LimitApprovad { get; set; }
+            public decimal? LimitApprovad { get; set; }
         }
 
     }

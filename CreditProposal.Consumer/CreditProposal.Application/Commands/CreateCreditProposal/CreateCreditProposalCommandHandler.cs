@@ -22,24 +22,36 @@ namespace CreditProposal.Application.Commands.CreateCreditProposal
 
             var customerCreditProposal = new CreditProposalEntity(customerScore, request.MonthlyIncome, request.EmploymentDuration);
 
-
-            foreach (var item in customerCreditProposal.Cards)
-            {
-                var matchingItem = request.RequestedCards.FirstOrDefault(l => l.CardType == item.CardType);
-                if (matchingItem != null)
-                {
-                    item.CardId = matchingItem.CardId; 
-                }
-
-            }
-
             var creditsCardsApproval = new List<CreditCardMessage>();
 
-            foreach (var card in customerCreditProposal.Cards)
+
+            if (customerCreditProposal.Cards.Any())
             {
-                var creditCardMessage = new CreditCardMessage(card.CardId, card.CardType, CardStatus.Approved, card.MaxLimit);
-                creditsCardsApproval.Add(creditCardMessage);
+                foreach (var item in customerCreditProposal.Cards)
+                {
+                    var matchingItem = request.RequestedCards.FirstOrDefault(l => l.CardType == item.CardType);
+                    if (matchingItem != null)
+                    {
+                        item.CardId = matchingItem.CardId;
+                        var creditCardMessage = new CreditCardMessage(matchingItem.CardId, item.CardType, CardStatus.Approved, item.MaxLimit);
+                        creditsCardsApproval.Add(creditCardMessage);
+                    }
+                }
             }
+
+            if(customerCreditProposal.Cards.Count != request.RequestedCards.Count)
+            {
+                var cardIdsInList2 = new HashSet<Guid>(customerCreditProposal.Cards.Select(c => c.CardId));
+
+                foreach (var item in request.RequestedCards)
+                {
+                    if (!cardIdsInList2.Contains(item.CardId))
+                    {
+                        var creditCardMessage = new CreditCardMessage(item.CardId, item.CardType, CardStatus.Denied, null);
+                        creditsCardsApproval.Add(creditCardMessage);
+                    }
+                }
+            }         
 
             var creditProposal = new CreditProposalMessage(request.CustomerId, creditsCardsApproval);
 

@@ -16,7 +16,7 @@ namespace CreditProposal.Application.DTO_s
 
         public class CreditCardMessage
         {
-            public CreditCardMessage(Guid cardId, CardType requestedCardType, CardStatus status, decimal limitApprovad)
+            public CreditCardMessage(Guid cardId, CardType requestedCardType, CardStatus status, decimal? limitApprovad)
             {
                 CardId = cardId;
                 RequestedCardType = requestedCardType;
@@ -27,7 +27,7 @@ namespace CreditProposal.Application.DTO_s
             public Guid CardId { get; set; }
             public CardType RequestedCardType { get; set; }
             public CardStatus Status { get; set; }
-            public decimal LimitApprovad { get; set; }
+            public decimal? LimitApprovad { get; set; }
         }
 
     }
