@@ -8,7 +8,7 @@ namespace CreditProposal.Infra.Publisher.Publishers
     public class MessagePublisher : IMessagePublisher
     {
         private readonly string _connectionString;
-        private readonly string _queueName = "creditProposal";
+        private readonly string _queueName = "credit-proposal-queue";
         private readonly AppSettings _appSettings;
 
         public MessagePublisher(AppSettings appSettings)

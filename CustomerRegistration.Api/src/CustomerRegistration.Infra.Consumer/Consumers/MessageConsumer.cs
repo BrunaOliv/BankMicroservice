@@ -16,7 +16,7 @@ namespace CustomerRegistration.Infra.Consumer.Consumers
         public MessageConsumer(IConfiguration configuration, IMediator mediator)
         {
             _connectionString = configuration.GetConnectionString("AzureServiceBus");
-            _queueName = "creditcard";
+            _queueName = "credit-card-queue";
             _mediator = mediator;
         }
 

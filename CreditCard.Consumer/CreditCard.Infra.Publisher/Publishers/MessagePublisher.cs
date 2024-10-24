@@ -8,7 +8,7 @@ namespace CreditCard.Infra.Publisher.Publishers
     public class MessagePublisher : IMessagePublisher
     {
         private readonly string _connectionString;
-        private readonly string _queueName = "creditcard";
+        private readonly string _queueName = "credit-card-queue";
         private readonly AppSettings _appSettings;
 
         public MessagePublisher(AppSettings appSettings)

@@ -8,7 +8,7 @@ namespace CustomerRegistration.Infra.Publisher.Publishers
     public class MessagePublisher : IMessagePublisher
     {
         private readonly string _connectionString;
-        private readonly string _queueName = "customer";
+        private readonly string _queueName = "customer-registration-queue";
 
         public MessagePublisher(IConfiguration configuration)
         {

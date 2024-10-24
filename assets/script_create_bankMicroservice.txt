@@ -1,0 +1,56 @@
+CREATE TABLE Customers (
+    CustomerId UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    FullName NVARCHAR(100) NOT NULL,
+    BirthDate DATETIME NOT NULL,
+    Cpf NVARCHAR(11) NOT NULL,
+    Rg NVARCHAR(10) NOT NULL,
+    IssuingAuthority NVARCHAR(50) NOT NULL,
+    Gender CHAR(1) NOT NULL,  -- M ou F
+    Nationality NVARCHAR(50) NOT NULL,
+    MaritalStatus NVARCHAR(20) NOT NULL
+);
+
+CREATE TABLE Contacts (
+    ContactId UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    CustomerId UNIQUEIDENTIFIER NOT NULL,
+    Phone NVARCHAR(15) NOT NULL,
+    Email NVARCHAR(100) NOT NULL,
+    FOREIGN KEY (CustomerId) REFERENCES Customers(CustomerId) ON DELETE CASCADE
+);
+
+CREATE TABLE Addresses (
+    AddressId UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    CustomerId UNIQUEIDENTIFIER NOT NULL,
+    Street NVARCHAR(100) NOT NULL,
+    Number INT NOT NULL,
+    Neighborhood NVARCHAR(50) NOT NULL,
+    City NVARCHAR(50) NOT NULL,
+    State NVARCHAR(50) NOT NULL,
+    PostalCode NVARCHAR(10) NOT NULL,
+    FOREIGN KEY (CustomerId) REFERENCES Customers(CustomerId) ON DELETE CASCADE
+);
+
+CREATE TABLE FinancialInformation (
+    FinancialInfoId UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    CustomerId UNIQUEIDENTIFIER NOT NULL,
+    MonthlyIncome DECIMAL(18, 2) NOT NULL,
+    Occupation NVARCHAR(50) NOT NULL,
+    CompanyName NVARCHAR(100) NOT NULL,
+    EmploymentDuration INT NOT NULL,
+    CreditScore INT,
+    FOREIGN KEY (CustomerId) REFERENCES Customers(CustomerId) ON DELETE CASCADE
+);
+
+CREATE TABLE CreditCards (
+    CardId UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    CustomerId UNIQUEIDENTIFIER NOT NULL,                 
+    CardType INT NOT NULL,                                
+    CardStatus INT NOT NULL,                              
+    Limit DECIMAL(18,2) NULL,                             
+    CardExpirationDate DATE NULL,                         
+    PaymentDate INT NOT NULL,                             
+
+    CONSTRAINT FK_CreditCards_Customers FOREIGN KEY (CustomerId) 
+        REFERENCES Customers(CustomerId) 
+        ON DELETE CASCADE
+);
